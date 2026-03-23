@@ -90,6 +90,7 @@ curl -i -X PUT -H "Accept:application/json" -H  "Content-Type:application/json" 
     "connector.class": "io.confluent.kafka.connect.datagen.DatagenConnector",
     "kafka.topic" : "customers",
     "output.data.format" : "AVRO",
+    "producer.override.enable.metric.push": "true",
     "quickstart" : "SHOE_CUSTOMERS",
     "tasks.max" : "1"
 }'
@@ -98,6 +99,7 @@ curl -i -X PUT -H "Accept:application/json" -H  "Content-Type:application/json" 
     "connector.class": "io.confluent.kafka.connect.datagen.DatagenConnector",
     "kafka.topic" : "orders",
     "output.data.format" : "AVRO",
+    "producer.override.enable.metric.push": "true",
     "quickstart" : "SHOE_ORDERS",
     "tasks.max" : "1"
 }'
